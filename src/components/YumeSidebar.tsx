@@ -43,19 +43,18 @@ export const YumeSidebar = () => {
       </div>
 
       {/* Active subscription - Yume 1.20.1 */}
-      <div className="absolute left-[12px] top-[87px] w-[162px] h-[26px] rounded-[5px] border border-black/20 bg-gradient-to-r from-[#CB8FFF]/80 to-[#AD4FFF]/80 backdrop-blur-[1.5px] flex items-center">
+      <button className="absolute left-[12px] top-[87px] w-[162px] h-[26px] rounded-[5px] border border-black/20 bg-gradient-to-r from-[#CB8FFF]/80 to-[#AD4FFF]/80 backdrop-blur-[1.5px] flex items-center hover:from-[#CB8FFF]/90 hover:to-[#AD4FFF]/90 transition-all duration-200">
         <span className="text-white font-inter text-xs font-normal ml-12">
           Yume 1.20.1
         </span>
-      </div>
+      </button>
 
       {/* Inactive subscription - Yume 1.16.5 */}
-      <div className="absolute left-[12px] top-[120px] w-[162px] h-[26px] rounded-[5px] border border-black/20 bg-[#151515]/80 backdrop-blur-[1.5px] flex items-center">
-        <span className="text-[#2B2B2B] font-inter text-xs font-normal ml-12">
+      <button className="absolute left-[12px] top-[120px] w-[162px] h-[26px] rounded-[5px] border border-black/20 bg-[#151515]/80 backdrop-blur-[1.5px] flex items-center hover:bg-[#1A1A1A]/80 transition-all duration-200">
+        <span className="text-[#2B2B2B] hover:text-[#555] font-inter text-xs font-normal ml-12 transition-colors duration-200">
           Yume 1.16.5
         </span>
-      </div>
-
+      </button>
       {/* Bottom user section */}
       <div className="absolute left-[9px] top-[484px] w-[167px] h-[40px] rounded-lg border border-black/20 bg-[#151515]/80 backdrop-blur-[1.5px] flex items-center gap-3 px-2">
         {/* User Avatar */}
