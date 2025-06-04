@@ -81,7 +81,7 @@ export const LauncherContent = () => {
               {/* Custom progress bar */}
               <div className="relative">
                 <div className="w-[159px] h-[5px] rounded-sm bg-[#291C35]"></div>
-                <div className="absolute top-0 left-0 w-[79px] h-[5px] rounded-sm bg-gradient-to-r from-[#CB8FFF] to-[#AD4FFF]"></div>
+                <div className="absolute top-0 left-0 w-[79px] h-[5px] rounded-sm bg-gradient-to-r from-[#CB8FFF] to-[#AD4FFF] animate-pulse"></div>
               </div>
 
               <span className="text-[#919191] font-inter text-[15px] font-normal">
