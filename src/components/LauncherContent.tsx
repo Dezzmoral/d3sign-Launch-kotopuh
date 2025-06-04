@@ -8,12 +8,26 @@ export const LauncherContent = () => {
       {/* Main content background */}
       <div className="w-full h-full rounded-[14px] bg-[#0D0D0D]/80 backdrop-blur-[1.5px] relative overflow-hidden">
         {/* Background image area */}
-        <div className="absolute left-[19px] top-[19px] w-[681px] h-[316px] rounded-[10px] bg-gradient-to-br from-gray-800 to-gray-900 relative overflow-hidden">
-          {/* Placeholder for the game screenshot - you would replace this with an actual image */}
-          <div className="w-full h-full bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 opacity-60"></div>
+        <div className="absolute left-[19px] top-[19px] w-[681px] h-[316px] rounded-[10px] relative overflow-hidden">
+          {/* Game screenshot background - simulated with gradient patterns */}
+          <div className="w-full h-full relative">
+            {/* Base background */}
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-600 via-slate-700 to-slate-800"></div>
+
+            {/* Pattern overlay to simulate game content */}
+            <div className="absolute inset-0 opacity-30">
+              <div className="absolute top-8 left-12 w-32 h-24 bg-emerald-600/40 rounded blur-md"></div>
+              <div className="absolute top-20 right-16 w-28 h-20 bg-blue-500/30 rounded blur-lg"></div>
+              <div className="absolute bottom-16 left-20 w-40 h-16 bg-purple-500/20 rounded blur-sm"></div>
+              <div className="absolute bottom-8 right-12 w-24 h-32 bg-orange-500/25 rounded blur-md"></div>
+            </div>
+
+            {/* Noise texture overlay */}
+            <div className="absolute inset-0 opacity-20 bg-gradient-to-tr from-transparent via-white/5 to-transparent"></div>
+          </div>
 
           {/* Overlay with blur effect */}
-          <div className="absolute inset-0 rounded-[10px] border border-black/20 bg-[#1C1C1C]/1 backdrop-blur-[6px]"></div>
+          <div className="absolute inset-0 rounded-[10px] border border-black/20 bg-[#1C1C1C]/5 backdrop-blur-[6px]"></div>
         </div>
 
         {/* Update information overlay */}
